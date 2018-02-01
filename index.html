@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <style>
           
-          header{background-color: black;
+          header{
+        
+        background-color: black!important;
           color:white;
-          height: 100px;                              
+          height: 200px;                              
 
           }
           h1{padding-top: 30px
@@ -53,6 +55,8 @@
               color: aliceblue;
               background-color: black;
               height: 200px;
+              width: 100%;
+            
               }
         h3{
             text-align: center;
@@ -64,8 +68,9 @@
 </style>
   </head>
   <body>
-      <header class="container-fluid text-center">
+      <header class="jumbotron">
     <h1>Choose your way of relaxing</h1>
+          <p>This is a place for those who fight anxiety attacs. You can pick relaxing gif, sound or breathing excercise</p>
           </header>
       <main>
           <br>
@@ -100,19 +105,10 @@
 <br>
 <div class="container-fluid" id="music">
     <h3>Here you can choose calming sound</h3>
-    
-<audio id="player"src="sounds/Fireplace.mp3"></audio>
-    <button onclick="document.getElementById('player').play()">Play</button>
-    <button onclick="document.getElementById('player').pause()">Pause</button>
-    <audio id="player1"src="sounds/Nature.mp3"></audio>
-    <button onclick="document.getElementById('player1').play()">Play</button>
-    <button onclick="document.getElementById('player1').pause()">Pause</button>
-    <audio id="player2"src="sounds/Ocean.mp3"></audio>
-    <button onclick="document.getElementById('player2').play()">Play</button>
-    <button onclick="document.getElementById('player2').pause()">Pause</button>
-    <audio id="player3"src="sounds/rainforest.mp3"></audio>
-    <button onclick="document.getElementById('player3').play()">Play</button>
-    <button onclick="document.getElementById('player3').pause()">Pause</button>
+    <tr><th>Fireplace</th>
+    <th>Nature</th>
+    <th>Ocean</th>
+    <th>Rainforest</th></tr>
 
 </div>
        
