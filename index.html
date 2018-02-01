@@ -37,6 +37,13 @@
   border-radius: 50%;
   border: 1px solid black;
 }
+            #c2{
+              width: 600px;
+              height: 600px;
+              position:relative;
+              margin: auto
+              
+          }
           tr,td {
               border-style: solid;
               border-width: 5px;
@@ -72,7 +79,13 @@
       <img class="d-block w-100" src="img/giphy.gif" alt="Sea in a cup" >
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/beach.gif" alt="beach" height="300">
+      <img class="d-block w-100" src="img/beach.gif" alt="beach" >
+    </div>
+      <div class="carousel-item">
+      <img class="d-block w-100" src="img/water.gif" alt="beach" >
+    </div>
+      <div class="carousel-item">
+      <img class="d-block w-100" src="img/smalltrain.jpg" alt="beach">
     </div>
   </div>
   <a class="carousel-control-prev" href="#Controls" role="button" data-slide="prev">
@@ -87,21 +100,27 @@
 <br>
 <div class="container-fluid" id="music">
     <h3>Here you can choose calming sound</h3>
-    <table>
-    <tr><th>Fireplace</th><th>Nature</th><th>Rainforest</th><th>Ocean</th></tr>
-    <tr><td><audio id="audio" src="sounds/Fireplace.mp3" controls ></audio></td>
-    <td><audio id="audio" src="sounds/Nature.mp3" controls ></audio></td>
-        <td><audio id="audio" src="sounds/rainforest.mp3" controls ></audio></td>
-        <td><audio id="audio" src="sounds/Ocean.mp3" controls ></audio></td>
-    </tr>
-        </table>
-          </div>
+    
+<audio id="player"src="sounds/Fireplace.mp3"></audio>
+    <button onclick="document.getElementById('player').play()">Play</button>
+    <button onclick="document.getElementById('player').pause()">Pause</button>
+    <audio id="player1"src="sounds/Nature.mp3"></audio>
+    <button onclick="document.getElementById('player1').play()">Play</button>
+    <button onclick="document.getElementById('player1').pause()">Pause</button>
+    <audio id="player2"src="sounds/Ocean.mp3"></audio>
+    <button onclick="document.getElementById('player2').play()">Play</button>
+    <button onclick="document.getElementById('player2').pause()">Pause</button>
+    <audio id="player3"src="sounds/rainforest.mp3"></audio>
+    <button onclick="document.getElementById('player3').play()">Play</button>
+    <button onclick="document.getElementById('player3').pause()">Pause</button>
+
+</div>
        
         <br>
         <div class="container-fluid">
              <h3 class="margin">Choose your breathing excercise</h3>
     <div id="Controls1" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+  <div class="carousel-inner" id="c2">
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/abe.gif" >
     </div>
