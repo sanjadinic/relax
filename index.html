@@ -11,21 +11,22 @@
       <style>
           
           header{
-        
+        width: 100%;
         background-color: black!important;
           color:white;
-          height: 200px;                              
+          height: 200px; 
+              background-size: cover;
 
           }
-          h1{padding-top: 30px
-              }
           
           footer{
               background-color: black;
+              height: 100px;
+              padding: 20px;
           }
           
           #c1{
-              width: 600px;
+              width: 500px;
               height: 500px;
               position:relative;
               margin: auto
@@ -40,7 +41,7 @@
   border: 1px solid black;
 }
             #c2{
-              width: 600px;
+              width: 500px;
               height: 600px;
               position:relative;
               margin: auto
@@ -60,6 +61,7 @@
               }
         h3{
             text-align: center;
+            padding: 20px;
             }
           #gifs{
     background-color: black;
@@ -68,13 +70,15 @@
 </style>
   </head>
   <body>
-      <header class="jumbotron">
+       <div class="container-fluid bg-1 text-center">
+      <header class="jumbotron" id="up">
     <h1>Choose your way of relaxing</h1>
-          <p>This is a place for those who fight anxiety attacs. You can pick relaxing gif, sound or breathing excercise</p>
+          <p>What will be your favourite type of relaxing : relaxing <a href="#c1">gifs</a>, <a href="#music">sounds</a> or <a href="#c2">breathing techniques</a></p>
           </header>
+            </div>
       <main>
-          <br>
-<div class="container-fluid">
+          <br> 
+<div class="container-fluid bg-2 text-center">
     <div id="Controls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" id="c1">
     <div class="carousel-item active">
@@ -147,7 +151,10 @@
     </div></div>
       
 </main>
-<footer class="container-fluid"></footer>
+<footer>
+    <div class="container-fluid text-center">
+    <p><a href="#up">Go to top</a></p></div>
+      </footer>
       
 
     <!-- Optional JavaScript -->
