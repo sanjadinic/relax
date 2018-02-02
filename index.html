@@ -4,18 +4,18 @@
     <title>A place where you relax</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <style>
           
-          header{
+          .jumbotron{
         width: 100%;
         background-color: black!important;
-          color:white;
-          height: 200px; 
+          color:white; 
               background-size: cover;
+               height: auto; text-align: center; padding: 20px 0;
 
           }
           
@@ -23,6 +23,7 @@
               background-color: black;
               height: 100px;
               padding: 20px;
+              width: 100%;
           }
           
           #c1{
@@ -67,15 +68,24 @@
     background-color: black;
               height: 300px;
           }
+  @media screen and (max-width: 900px) {
+#header.header-front-page .bottom-header h1 {
+    font-size: 40px;
+}
+}
 </style>
   </head>
   <body>
-       <div class="container-fluid bg-1 text-center">
-      <header class="jumbotron" id="up">
-    <h1>Choose your way of relaxing</h1>
-          <p>What will be your favourite type of relaxing : relaxing <a href="#c1">gifs</a>, <a href="#music">sounds</a> or <a href="#c2">breathing techniques</a></p>
+      <header>
+      <div class="jumbotron" id="up">
+    <div class="container-fluid">
+        
+    <h1>Pick your favourite way of relaxing</h1>
+          <p>What will you choose to fight anxiety attack: relaxing <a href="#c1">gifs</a>, <a href="#music">sounds</a> or <a href="#c2">breathing techniques</a>?</p>
+        
+          </div>
+      </div>
           </header>
-            </div>
       <main>
           <br> 
 <div class="container-fluid bg-2 text-center">
@@ -107,7 +117,7 @@
   </a>
     </div></div>
 <br>
-<div class="container-fluid" id="music">
+<div class="container-fluid" style="overflow-x:auto" id="music">
     <h3>Here you can choose calming sound</h3>
     <table>
     <tr><th>Fireplace</th>
